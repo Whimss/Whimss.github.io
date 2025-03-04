@@ -20,6 +20,39 @@ a {
 
 a:hover { text-decoration: none; }
 button:focus { outline: none; }
+.navbar-nav .dropdown-menu {
+    background-color: white; /* Match navbar background */
+    border: 1px solid #abb0bf; /* Match navbar border */
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+/* Dropdown items */
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #6A6B6C; /* Match navbar text color */
+    font-size: 1.2rem; /* Match font size */
+    text-transform: uppercase; /* Match text styling */
+    padding: 15px 49px; /* Match navbar padding */
+    transition: all 0.3s ease;
+}
+
+/* Hover & active state */
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .dropdown-menu .dropdown-item:focus {
+    background-color: #555b69; /* Match navbar hover color */
+    color: white;
+}
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Remove unwanted margin */
+}
+
+@media (min-width: 992px) {
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
 
 p {
     color: #666;
@@ -30,7 +63,7 @@ p {
 
 .tm-hr {
     width: 240px;
-    border-top: 3px solid #657a62;
+    border-top: 3px solid #555b69;
     margin: 0;
 }
 
@@ -39,18 +72,18 @@ p {
 .container-fluid { max-width: 1480px; }
 
 .tm-logo {
-    position: absolute;
+    position: relative;
     top: 0;
-    left: 15px;
+    left: 0px;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #657a62;
+    background-color: #555b69;
     color: white;
-    width: 400px;
+    width: 100%;
     height: 200px;
-    padding: 50px 40px;
+    padding: 0px 40px;
 }
 
 @media (max-width: 500px) {
@@ -77,8 +110,8 @@ p {
 
 .tm-nav-container-outer {
     margin-top: 8px;
-    border-top: 1px solid #9dba9a;
-    border-bottom: 1px solid #9dba9a;
+    border-top: 1px solid #abb0bf;
+    border-bottom: 1px solid #abb0bf;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -87,7 +120,6 @@ p {
     border-bottom: 8px solid transparent;
     text-align: center;
     padding: 30px 49px;
-    margin-right: 50px;
     text-transform: uppercase;
     font-size: 1.2rem;
     transition: all 0.3s ease;
@@ -95,14 +127,14 @@ p {
 
 .nav-item.active .nav-link,
 .nav-item:hover .nav-link {
-    color: #657a62;
-    border-top: 8px solid #657a62;
-    border-bottom: 8px solid #657a62;
+    color: #343f44;
+    border-top: 8px solid #555b69;
+    border-bottom: 8px solid #555b69;
 }
 
 .tm-intro { max-width: 580px; }
 h4 { font-size: 1.5rem; }
-.tm-text-primary { color: #9dba9a; }
+.tm-text-primary { color: #abb0bf; }
 .tm-text-primary-link { color: #0099FF; }
 .tm-text-primary-link:hover { color: rgb(15, 133, 211); }
 
@@ -144,7 +176,7 @@ h4 { font-size: 1.5rem; }
 .tm-box { padding: 50px; }
 .tm-box-2 { padding: 50px; max-width: 500px; }
 .tm-box-3 { padding: 70px 35px;}
-i { color: #9dba9a; }
+i { color: #abb0bf; }
 
 .tm-overlay {
     max-width: 660px;
@@ -163,13 +195,13 @@ i { color: #9dba9a; }
 }
 
 .btn-primary {
-    background-color: #657a62;
-    border-color: #657a62;
+    background-color: #555b69;
+    border-color: #555b69;
 }
 
 .btn-primary:hover {
-    background-color: #9dba9a;
-    border-color: #9dba9a;
+    background-color: #abb0bf;
+    border-color: #abb0bf;
 }
 
 footer {
@@ -177,8 +209,8 @@ footer {
     margin-bottom: 70px;
 }
 
-.tm-link-primary { color: #657a62; }
-.tm-link-primary:hover { color: #6f9460; }
+.tm-link-primary { color: #555b69; }
+.tm-link-primary:hover { color: #abb0bf; }
 .fa-15x { font-size: 1.5em; }
 
 .tm-social-icon {
@@ -195,7 +227,7 @@ footer {
 }
 
 .tm-social-link i { transition: all 0.3s ease; }
-.tm-social-link:hover i { color: #657a62; }
+.tm-social-link:hover i { color: #555b69; }
 
 /* Hover effect */
 .tm-about-person-layout {
@@ -209,7 +241,7 @@ footer {
 	position: relative;
     overflow: hidden;
     max-height: 420px;     
-	background: #6f9460;
+	background: #555b69;
 	text-align: center;
 	cursor: pointer;
 }
@@ -272,7 +304,7 @@ footer {
 /***** Milo *****/
 /*---------------*/
 
-figure.effect-milo { background: #2e5d5a; }
+figure.effect-milo { background: #343f44; }
 
 figure.effect-milo img {
 	max-width: none;
@@ -381,7 +413,7 @@ select:not([multiple]) {
         border-radius: 0;
     }
 
-    .navbar-toggler i { color: #657a62; }
+    .navbar-toggler i { color: #555b69; }
     
     .navbar-collapse {
         position: fixed;
