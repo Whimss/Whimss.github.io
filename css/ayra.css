@@ -96,6 +96,11 @@ p {
     border-top: 3px solid #555b69;
     margin: 0;
 }
+.tm-hr-w {
+    width: 240px;
+    border-top: 3px solid #f8f9fa;
+    margin: 0;
+}
 
 .tm-hr-s {
     width: 140px;
