@@ -280,6 +280,8 @@ h4 {
 }
 
 .tm-bg-gray-dark {
+    padding:50px;
+    border-radius: 15px;
     background-color: #EDEEEF;
 }
 
@@ -295,13 +297,16 @@ h4 {
     padding: 50px;
     background-color: #555b69;
     color:white;
-    border-radius: 15px;;
+    border-radius: 15px;
 
 }
 
 .tm-box-2 {
     padding: 50px;
     max-width: 500px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    
 }
 
 .tm-box-3 {
