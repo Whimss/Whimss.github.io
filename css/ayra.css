@@ -1,10 +1,4 @@
-/*
 
-TemplateMo 549 Business Oriented
-
-https://templatemo.com/tm-549-business-oriented
-
-*/
 
 
 body {
@@ -105,7 +99,16 @@ p {
 .tm-hr-s {
     width: 140px;
 }
-
+.tm-hr-center {
+    width: 50%;
+    max-width: 500px;
+    border-top: 3px solid #555b69;
+    margin: 10px;
+}
+.hr-container {
+    display: flex;
+    justify-content: center;
+}
 .tm-box-bordered {
     border: 1px solid #9C9D9E;
 }
@@ -197,7 +200,9 @@ h4 {
 .tm-text-primary {
     color: #abb0bf;
 }
-
+.tm-text-secondary {
+    color:#555b69;
+}
 .tm-text-primary-link {
     color: #0099FF;
 }
@@ -311,6 +316,9 @@ h4 {
 
 .tm-box-3 {
     padding: 70px 35px;
+    background-color: #abb0bf;
+    border-radius: 15px;
+
 }
 
 i {
