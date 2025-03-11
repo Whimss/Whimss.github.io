@@ -44,7 +44,10 @@ button:focus {
     padding: 15px 49px;
     /* Match navbar padding */
     transition: all 0.3s ease;
+    overflow: hidden;     /* Hide any overflowed text */
+    text-overflow: ellipsis;
 }
+
 
 /* Hover & active state */
 .navbar-nav .dropdown-menu .dropdown-item:hover,
@@ -56,8 +59,10 @@ button:focus {
 
 .navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0;
-    /* Remove unwanted margin */
+}
+.navbar-nav .dropdown-toggle::after {
+    
+    font-family: 'FontAwesome'; /* Use FontAwesome for the arrow (optional) */
 }
 
 .bottom-left-text {
@@ -71,6 +76,30 @@ button:focus {
 }
 
 @media (min-width: 992px) {
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+        
+    }
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;           /* Larger font size for desktop */
+        padding: 20px 15px;          /* Larger padding for desktop */
+    }
+
+    /* Adjust padding of dropdown items */
+    .navbar-nav .dropdown-menu .dropdown-item {
+        padding: 15px 30px;  /* Adjust padding for larger screens */
+        font-size: 1.2rem;    /* Larger font size for dropdown items */
+    }
+}
+@media (max-width: 991px) {
+    .navbar-nav .dropdown-menu {
+        display: none; /* Hide dropdown by default */
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        left: 0;
+    }
+
     .navbar-nav .dropdown:hover .dropdown-menu {
         display: block;
     }
@@ -115,6 +144,8 @@ p {
 
 .container-fluid {
     max-width: 1480px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .tm-logo {
@@ -163,6 +194,7 @@ p {
 #tm-main-nav {
     padding: 0;
     z-index: 1000;
+    
 }
 
 .tm-nav-container-outer {
@@ -176,7 +208,7 @@ p {
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     text-align: center;
-    padding: 30px 49px;
+    padding: 30px 30px;
     text-transform: uppercase;
     font-size: 1.2rem;
     transition: all 0.3s ease;
