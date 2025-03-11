@@ -101,7 +101,7 @@ button:focus {
     }
 
     .navbar-nav .dropdown:hover .dropdown-menu {
-        display: block;
+        display: block !important;
     }
 }
 
