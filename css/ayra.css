@@ -113,7 +113,15 @@ p {
 .tm-title-gray {
     color: #666;
 }
-
+.title-bold{
+    color:#0693e3;
+    font-weight: bold;
+    font-size: 3.75rem;
+}
+.title-light{
+    color:#8ed1fc;
+    font-size: 2.5rem;
+}
 .tm-hr {
     width: 240px;
     border-top: 3px solid #555b69;
@@ -208,7 +216,7 @@ p {
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     text-align: center;
-    padding: 30px 30px;
+    padding: 30px 18px;
     text-transform: uppercase;
     font-size: 1.2rem;
     transition: all 0.3s ease;
@@ -310,6 +318,10 @@ h4 {
 
 .tm-text-gray {
     color: #666;
+}
+
+.text-dark{
+    color:black;
 }
 
 .tm-bg-gray {
