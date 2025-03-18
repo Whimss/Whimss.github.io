@@ -20,7 +20,7 @@ button:focus {
     outline: none;
 }
 :target {
-    scroll-margin-top: 80px; /* Adjust based on navbar height */
+    scroll-margin-top: 40px; /* Adjust based on navbar height */
 }
 
 .navbar-nav .dropdown-menu {
@@ -114,22 +114,24 @@ p {
     color: #666;
 }
 .title-bold{
-    color:#0693e3;
+    color:#2380b6;
     font-weight: bold;
-    font-size: 3.75rem;
+    font-size: 4rem;
+    font-family: "Times New Roman", Times, serif;
 }
 .title-light{
-    color:#8ed1fc;
-    font-size: 2.5rem;
+    color:#3d94ca;
+    font-size: 3rem;
+    font-family: "Times New Roman", Times, serif;
 }
 .tm-hr {
-    width: 240px;
+    width: 430px;
     border-top: 3px solid #555b69;
     margin: 0;
 }
-.tm-hr-w {
-    width: 240px;
-    border-top: 3px solid #f8f9fa;
+.tm-hr-long {
+    width: 670px;
+    border-top: 3px solid #555b69;
     margin: 0;
 }
 
@@ -216,7 +218,7 @@ p {
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     text-align: center;
-    padding: 30px 18px;
+    padding: 30px 20px;
     text-transform: uppercase;
     font-size: 1.2rem;
     transition: all 0.3s ease;
@@ -322,6 +324,7 @@ h4 {
 
 .text-dark{
     color:black;
+    
 }
 
 .tm-bg-gray {
