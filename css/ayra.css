@@ -639,7 +639,6 @@ select:not([multiple]) {
 @media (max-width: 992px) {
     .navbar-toggler {
         position: fixed;
-        right: 0px;
         top: 10px;
         background-color: white;
         padding: 10px 16px;
