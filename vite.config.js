@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Whimss.github.io/',
+  base: '/whimss.github.io/',
   plugins: [react(),tailwindcss()],
 })
