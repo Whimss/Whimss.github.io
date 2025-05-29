@@ -18,8 +18,8 @@ const projects = [
     description: "Senior class project aimed at California wildfire predictions using 5 different algorithms and 10 different datasets to train models. ",
     url: "https://faridko26.github.io/wildfire.github.io/",
     images: [
-      "/images/wildfire1.png",
-      "/images/wildfire2.png"
+      `${import.meta.env.BASE_URL}images/wildfire1.png`,
+      `${import.meta.env.BASE_URL}images/wildfire2.png`
     ],
     technologies: [
       { name: "Jupyter", img: jupyter }, // no official Jupyter icon, Python is common substitute
@@ -37,8 +37,8 @@ const projects = [
     description: "Immigration law firm informational website.",
     url: "https://ayralaw1.github.io/AyraLaw/",
     images: [
-      "/images/ayra1.png",
-      "/images/ayra2.png"
+       `${import.meta.env.BASE_URL}images/ayra1.png`,
+      `${import.meta.env.BASE_URL}images/ayra2.png`
     ],
     technologies: [
       { name: "Bootstrap", img: bootstrap }, // bootstrap icon from bootstrap-icons
@@ -52,8 +52,8 @@ const projects = [
     description: "A site that allows you to look up an anime and add to a personal list as well as add to favorites, add to watch later, or add to in progress.",
     url: "https://animetracker-bd18c.web.app/signin",
     images: [
-     "/images/anime1.png",
-      "/images/anime2.png"
+      `${import.meta.env.BASE_URL}images/anime1.png`,
+      `${import.meta.env.BASE_URL}images/anime2.png`
     ],
     technologies: [
       { name: "HTML5", img: html },
@@ -84,7 +84,7 @@ class Projects extends Component {
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
 
     return (
-      <section id="projects" className="max-w-5xl mx-auto py-16 px-6">
+      <section id="projects" className=" min-h-screen max-w-5xl mx-auto py-16 px-6">
         <h2 className="text-4xl font-semibold mb-6 inline-block border-b-4 text-[#333366] ">
           Projects
         </h2>
