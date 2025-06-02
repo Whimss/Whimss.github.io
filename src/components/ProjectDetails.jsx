@@ -11,12 +11,12 @@ export default function ProjectDetails({ show, onHide, data }) {
             onClick={onHide}
         >
             <div
-                className="bg-white rounded-lg max-w-3xl w-full p-6 relative "
+                className="bg-white rounded-lg max-w-3xl w-full p-6 relative max-h-screen overflow-auto"
                 onClick={(e) => e.stopPropagation()} // Prevent modal closing when clicking inside content
             >
                 <button
                     onClick={onHide}
-                    className="absolute top-4 right-4  hover:text-gray-900 text-3xl font-bold"
+                    className="absolute top-4 right-4  hover:text-gray-900 text-3xl font-bold cursor-pointer"
                     aria-label="Close modal"
                 >
                     &times;
