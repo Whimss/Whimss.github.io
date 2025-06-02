@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
     return (
-        <section className="h-screen bg-[#CCCCFF] text-[#333366] flex items-center justify-center px-4">
+        <section className="h-screen bg-[#CCCCFF] text-[#333366] flex items-center justify-center mx-auto py-16 px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-4 gap-4 w-full max-w-7xl h-full">
 
                 {/* Grid 1 */}
