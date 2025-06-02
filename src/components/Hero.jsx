@@ -9,9 +9,9 @@ export default function Hero() {
                 <div className=" p-6 rounded-lg flex flex-col items-center justify-center
                     md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-5">
                     <img
-                        src="/profile.jpg"
+                        src={ `${import.meta.env.BASE_URL}images/me.jpg`}
                         alt="Profile"
-                        className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-md mb-4"
+                        className="w-70 h-70 rounded-full object-cover border-4 border-white shadow-md mb-4"
                     />
                     <h1 className="text-3xl font-bold mb-1">Alondra Sanchez</h1>
                     <a
@@ -37,11 +37,11 @@ export default function Hero() {
                     md:col-span-2 md:row-start-3 md:row-end-4 border border-[#333366]">
                     <p className="text-xl text-left">
                         Welcome to my website. Please feel free to read more 
-                        <a href="#about" className="text-blue-400 hover:underline ml-1 mr-1">about me</a>,
                         <a href="#experience" className="text-blue-400 hover:underline mx-1">work experience</a>,
                         <a href="#projects" className="text-blue-400 hover:underline mx-1">projects</a>,
+                        <a href="#about" className="text-blue-400 hover:underline ml-1 mr-1">about me</a>,
                         or
-                        <a href="#contact" className="text-blue-400 hover:underline ml-1">contact me.</a>.
+                        <a href="#contact" className="text-blue-400 hover:underline ml-1">contact me</a>.
                     </p>
                 </div>
             </div>

@@ -8,11 +8,6 @@ export default function Navbar() {
           <div className="text-2xl font-semibold ">Alondra Sanchez Ochoa</div>
           <ul className="flex space-x-6 ">
             <li>
-              <a href="#about" style={{ color: 'white' }} className="hover:text-blue-400">
-                About
-              </a>
-            </li>
-            <li>
               <a href="#experience" style={{ color: 'white' }} className="hover:text-blue-400">
                 Experience
               </a>
@@ -20,6 +15,11 @@ export default function Navbar() {
             <li>
               <a href="#projects" style={{ color: 'white' }} className="hover:text-blue-400">
                 Projects
+              </a>
+            </li>
+             <li>
+              <a href="#about" style={{ color: 'white' }} className="hover:text-blue-400">
+                About
               </a>
             </li>
             <li>
